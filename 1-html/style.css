@@ -1,0 +1,14 @@
+/*
+selector {
+    proterty: value;
+}
+*/ 
+
+body {
+    background-color: cyan;
+}
+
+my_h1 {
+    font-size: 35px;
+    color: magenta;
+}
