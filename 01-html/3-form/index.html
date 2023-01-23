@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1> 기본 form 입력</h1>
+
+  <p>하도 많아서 외우지 말고 그냥 필요할 때 찾아보자. 그리고 별로 안예뻐서... 이쁜거 구현된거 찾아서 쓰자</p>
+
+  <!-- action: 입력 전달 위치     method: 입력 방식(GET, POST, ...)-->
+  <form action="" method="">
+
+    <!-- label for="name" 이랑 input id="name" 으로 매칭됨-->
+    <label for="id">이름: </label>
+    <!-- type="text" : 일반 텍스트 입력-->
+    <input id="id" type="text" value="Default 이름">
+
+    <br>
+
+    <label for="pswd">비밀번호: </label>
+    <!-- type="password" : 비밀번호 입력-->
+    <input id="pswd" type="password" value="Default 비밀번호">
+
+    <br>
+
+    <!-- 이메일 입력 가능, 근데 뭔 차이인지...-->
+    <input type="email" name="" id="">
+
+    <br>
+
+    <!-- name="referer": 서버 사용할 때 필요...-->
+    <label for="check_internet">인터넷</label>
+    <input type="checkbox" name="referer" id="check_internet">
+
+    <label for="check_friend">친구 소문</label>
+    <input type="checkbox" name="referer" id="check_friend">
+
+    <label for="check_ad">광고</label>
+    <input type="checkbox" name="referer" id="check_ad">
+
+    <br>
+
+    <label type="">성별</label>
+    <!-- radio type 에서는 name 속성이 같을 때만 동작함-->
+    남자: <input type="radio" name="gender" id="">
+    여자: <input type="radio" name="gender" id="">
+    그외: <input type="radio" name="gender" id="">
+
+    <br>
+
+    <!-- file 입력 -->
+    <input type="file" name="" id="">
+
+    <br>
+
+    <!-- 날짜 지정 -->
+    <input type="date" name="" id="">
+
+    <br>
+
+    <!-- 날짜 + 시간 -->
+    <input type="datetime-local" name="" id="">
+
+    <br>
+
+    <!-- slider:0~100 -->
+    <input type="range" name="slider" id="" value="100">
+
+    <!-- 색상 지정 (16진수 RGB) -->
+    <input type="color" name="some_color" id="" value="#F0FF0F">
+
+    <br>
+
+    <!-- cols, rows: 열, 행 크기 (사용하는 언어에 따라서 가로가 달라짐 ㅇㅇ)-->
+    <textarea name="simple" id="text_area" cols="30" rows="5">
+      default text area <!-- default value 에서 앞쪽 들여쓰기가 출력됨... 심지어 주속도...!!! (plain text)-->
+    </textarea>
+
+    <!-- 아래처럼 딱 맞게 한줄 코딩 해야 default text를 제대로 넣을 수 있음 -->
+    <textarea name="simple" id="text_area" cols="30" rows="5">default text area </textarea>
+
+    <br>
+
+    <!-- 일반적인 선택창 드롭다운 박스? -->
+    <select name="" id="">
+      <option value="">바나나</option>
+      <option value="">수박</option>
+      <option value="">참외</option>
+    </select>
+
+    <!-- 다중 선택 박스? 그냥 multiple이라고만 써도 되는 표준은 multiple="multiple"-->
+    <!-- ctrl or cmd 누르고 클릭하면 여러개 선택할 수 있음 -->
+    <select name="" id="" multiple="multiple">
+      <option value="">바나나</option>
+      <option value="">수박</option>
+      <option value="">참외</option>
+    </select>
+
+    <select name="" id="">
+      <optgroup label="과일"> <!-- 그룹을 지정할 수 있음 -->
+        <option value="">바나나</option>
+        <option value="">수박</option>
+        <option value="">참외</option>
+      </optgroup>
+
+      <optgroup label="고기">
+        <option value="">소</option>
+        <option value="">돼지</option>
+        <option value="">닭</option>
+      </optgroup>
+      
+    </select>
+
+    <br> <br>
+
+    <input type="submit" value="제출">
+
+    <br>
+
+    <!-- 하지만 위의 기본 form 방식을 사용하면 뽀대가 안남 -->
+    <!-- 그래서 contenteditable 이나 html+css+js 여러가지 섞어서 이쁘게 만듬 -->
+    <!-- contenteditable="" 이라는 속성으로 만들수도 있음-->
+    <div contenteditable=""> text example </div> 
+
+  </form>
+
+  <hr>
+
+  <form action="">
+    <fieldset> <!-- 여러개의 필드를 하나로 묶음 -->
+      <legend>입력 양식</legend> <!-- filedset 의 제목 -->
+      <table>
+        <tr>
+          <td><label for="name">이름</label></td>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">이메일</label></td>
+          <td><input type="text" id="email"></td>
+        </tr>
+      </table>
+      <input type="submit" value="제출">
+    </fieldset>
+
+  </form>
+
+  <hr>
+
+  <h1> 공간 분할 </h1>
+
+  <!-- block 형식으로 공간을 분할 -->
+  <div> div는 그냥 단순히 공간만 분할함. 디자인을 위해서 공간을 분할 함 </div>
+
+  <!-- inline 형식으로 공간을 분할 -->
+  <span> 한 줄 내로 기록되게 분할함 </span>
+
+</body>
+
+</html>
