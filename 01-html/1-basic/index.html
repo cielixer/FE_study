@@ -1,0 +1,166 @@
+<!DOCTYPE html> <!-- web browser에서 어떻게 해당 파일을 읽고 출력할지에 대한 정보, html은 html5라는 정보 -->
+<html lang="en"> <!-- 동작에 아무런 영향 X, 언어 설정, 구글 검색에서 보여줄 때 도움 됨 -->
+
+<head> <!-- 보이지 않는 여러 정보들 -->
+  <meta charset="UTF-8">
+  <meta content=""> <!-- meta data, 검색 엔진 또는 twitter card 같은 것들에서 띄우는 내용같은것들을 줌 -->
+  <title>Document</title> <!-- 제목 설정-->
+  <style> </style> <!-- CSS 파일 지정 -->
+  <script> </script> <!-- javascript -->
+</head>
+
+<body>
+  <!-- Headings -->
+  <h1>Headings 1</h1>
+  <h2>Headings 2</h2>
+  <h3>Headings 3</h3>
+  <h4>Headings 4</h4>
+  <h5>Headings 5</h5>
+  <h6>Headings 6</h6>
+
+  <br> <!-- breaks: 줄바꿈, 문단 내 혹은 외에서 그냥 enter 역할-->
+  <b>bold</b> <!-- bold -->
+  <i>italic</i> <!-- italic-->
+  <u>underlide</u> <!-- underline -->
+  <s>strike</s> <!-- strike line -->
+  <!-- big tag 는 html4->5에서 삭제됨-->
+  <small>small</small> <!-- small font-->
+
+  <ruby> <!-- ruby tag: 한글에서는 쓸일 없음-->
+    <span>안녕</span>
+    <rt>하세요</rt>
+  </ruby>
+
+  <hr> <!--horizontal rule: 수평(가로) 줄-->
+
+  <!-- Paragraph(본문) : 문단 만들기 -->
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua. <br>facilisi etiam dignissim diam quis enim lobortis scelerisque. <b>At urna</b> condimentum
+    mattis pellentesque id nibh tortor id. Id porta nibh venenatis cras sed felis. Aenean vel elit scelerisque
+    mauris pellentesque pulvinar. <em>Amet volutpat</em> consequat mauris nunc congue nisi vitae. Odio ut enim
+    blandit volutpat maecenas volutpat <s>blandit aliquam etiam</s>. Leo duis ut diam quam nulla porttitor massa.
+    Vitae tortor condimentum lacinia quis <small>vel eros donec ac</small>. Rutrum quisque non tellus
+    orci ac auctor.
+  </p>
+  <p>
+    Esse minim proident dolor nisi est. In do sunt ut dolore ipsum fugiat voluptate proident non ea non. Esse mollit
+    ad et laborum. Elit fugiat ad ut aute dolore. Sint ut deserunt laboris reprehenderit mollit ipsum nulla magna.
+    Quis do excepteur incididunt eu voluptate anim pariatur cupidatat amet.
+
+    Duis consectetur nisi officia enim elit adipisicing dolor eiusmod nostrud ad minim reprehenderit mollit aliquip.
+    Exercitation deserunt aliquip sit cupidatat adipisicing exercitation nulla culpa. Nisi minim laboris in et anim
+    reprehenderit non. Excepteur aliqua cupidatat incididunt qui labore cillum exercitation pariatur aliquip et.
+    Anim ea eiusmod nisi quis quis anim id nisi magna sit ea sunt.
+
+    Minim fugiat Lorem anim aute nisi dolor laborum ullamco reprehenderit Lorem nisi et. Incididunt sit eiusmod est
+    eu enim pariatur. Et minim cillum magna ex consequat voluptate do eiusmod aliquip. Exercitation exercitation
+    quis enim aliqua qui excepteur enim veniam.
+
+    Pariatur qui et cillum sit exercitation in officia reprehenderit nisi. In cupidatat adipisicing velit velit et
+    ex tempor excepteur officia pariatur est cillum. Veniam cupidatat tempor minim enim.
+
+    Aliqua do anim quis occaecat sit duis magna aliquip tempor sunt nostrud aute magna voluptate. Anim veniam
+    incididunt incididunt fugiat. Sint in consequat ex proident. Sint sint aliqua magna nostrud quis qui.
+  </p>
+  <hr>
+  <p>
+    CO<sub>2</sub> <!-- subscript -->
+    13<sup>th</sup> <!-- superscript -->
+  </p>
+
+  <hr>
+
+  <ol> <!-- Ordered List -->
+    <li> list 1 </li> <!-- list item -->
+    <li> list 2 </li>
+    <li> list 3 </li>
+    <li> list 4 </li>
+    <li> list 5 </li>
+  </ol>
+
+  <ul> <!-- Unordered List -->
+    <li> list 1 </li> <!-- list item -->
+    <li> list 2 </li>
+    <li> list 3 </li>
+    <li> list 4 </li>
+    <li> list 5 </li>
+  </ul>
+
+  <hr>
+
+  <ol>
+    <li> 방콕 쇼핑 리스트 </li>
+    <li> 방콕에서 반드시 들려야 할 베스트
+      <ul>
+        <li>씨암 (Siam)</li>
+        <li>카오산 로드 (Khaosan Road)</li>
+      </ul>
+    </li>
+    <li> 방콕 맛집 리스트 </li>
+    <li> 방콕 관광 리스트 </li>
+  </ol>
+
+  <hr>
+
+  <a href="https://github.com/cielixer">github.me</a> <!-- anchor -->
+  <!-- href: hyperlink reference -->
+
+  <h1>Tables</h1>
+  <table border="1"> <!-- 표 자체를 의미-->
+    <tr> <!-- 행 만들기 -->
+      <td rowspan="6"> 인원 </td> <!-- 여러개의 행 사용 -->
+      <th>이름</th> <!-- 열 요소 원소를 제목으로 설정 -->
+      <th>나이</th>
+      <th>악기</th>
+      <th colspan="4">참여</th> <!-- 여러개의 열 사용 -->
+    </tr>
+    <tr>
+      <td>신준섭</td> <!-- 열 요소 -->
+      <td>27</td>
+      <td>베이스</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>강영욱</td>
+      <td>26</td>
+      <td>보컬</td>
+      <td>O</td>
+      <td>X</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>전상호</td>
+      <td>27 </td>
+      <td rowspan="2">기타</td>
+      <td>O</td>
+      <td>X</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>한성주</td>
+      <td>29</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>윤종수</td>
+      <td>31</td>
+      <td>피아노</td>
+      <td>X</td>
+      <td>X</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

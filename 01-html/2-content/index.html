@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+
+  <h1>Images</h1>
+  <!-- src: source image (url or img file)-->
+  <!-- alt: alternative text, 검색 엔진에서 웹 페이지에서 어떠한 이미지를 출력하기 위한 용도 + 이런 저런 용도로 사용 ㅇㅇ -->
+  <img src="?" alt="src를 load할 수 없으면 뜨는 대체 문자">
+  <!-- width, height: 크기 강제 지정, 예전에는 많이 사용했으나 현재는 style을 써서 거의 안씀 -->
+  <img src="https://blog.kakaocdn.net/dn/XEAGa/btqB10c0bQ1/RZk86MYViwrP4OaBdpfhn0/img.png" alt="고래" width="300" ,
+    height="200">
+
+  <br>
+
+  <img src="https://picsum.photos/id/237/200/300"> <!-- image tag (no end-tag)-->
+
+  <br>
+  <!-- link image -->
+  <a href="https://github.com/cielixer">
+    <img src="https://avatars.githubusercontent.com/u/30239337?v=4">
+  </a>
+
+  <br>
+
+  <!-- a ... target=""    new page or current page ...-->
+  <!-- a ... title=""     mouse hover image-->
+
+  <a href="http://www.naver.com" target="_blank" title="네이버로 이동">
+    <img src="https://blog.kakaocdn.net/dn/XEAGa/btqB10c0bQ1/RZk86MYViwrP4OaBdpfhn0/img.png" alt="Go to Naver"
+      width="300">
+  </a>
+  <a href="http://www.daum.net" target="_blank" title="다음으로 이동">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Daum_communication_logo.svg/2560px-Daum_communication_logo.svg.png"
+      alt="Go to Daum" width="300">
+  </a>
+  <a href="http://www.google.com" target="_blank" title="구글로 이동">
+    <img src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="Go to Google" width="300">
+  </a>
+
+  <p>
+    URI: Uniform Resource Identifier(식별자) <br>
+    URL: Uniform Resource Locator(위치), URI의 subset <br>
+    URN: Uniform Resource Name(이름), URI의 subset <br>
+    실제로 URI 와 URL은 별 차이 없어서 혼용해서 쓰기도 함
+  </p>
+  <img src="https://i.stack.imgur.com/FbaKm.png">
+
+  <h2>img src에 넣을 수 있는 것들</h2>
+  <ul>
+    <li> 절대 경로 </li>
+    <li> 상대 경로 </li>
+  </ul>
+
+  <h1> Audio & Video </h1>
+
+  <!-- img 처럼 그냥 src만 넣으면 플레이 할수 없음. controls 라는 속성을 넣어야 함-->
+  <!-- controls만 넣어도 되고 controls="controls"로 넣어도 아무 상관 없음, 하지만 후자가 전통 XMl style-->
+  <!-- video의 경우 img랑 속성이 비슷해서 width 같은것들 사용 가능-->
+
+  <audio src="Light.mp3" controls>  </audio>
+  <video src="Network.mp4" controls="controls" width="640">  </video>
+
+  <!-- 이후 script tag로 js로 이것 저것들을 사용하게 됨. 저 위에 있는것들 이상으로 뭘 알아야 할 필요 전혀 없음-->
+  <!-- 실제로 <audio ... > </audio> tag 사이에 <source> 등 몇몇 설정이 가능(했었음 ㅇㅇ, 근데 이제 안씀)-->
+
+</body>
+
+</html>
