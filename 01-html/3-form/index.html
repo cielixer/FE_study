@@ -115,7 +115,7 @@
         <option value="">돼지</option>
         <option value="">닭</option>
       </optgroup>
-      
+
     </select>
 
     <br> <br>
@@ -127,7 +127,7 @@
     <!-- 하지만 위의 기본 form 방식을 사용하면 뽀대가 안남 -->
     <!-- 그래서 contenteditable 이나 html+css+js 여러가지 섞어서 이쁘게 만듬 -->
     <!-- contenteditable="" 이라는 속성으로 만들수도 있음-->
-    <div contenteditable=""> text example </div> 
+    <div contenteditable=""> text example </div>
 
   </form>
 
@@ -160,6 +160,50 @@
 
   <!-- inline 형식으로 공간을 분할 -->
   <span> 한 줄 내로 기록되게 분할함 </span>
+
+  <!-- 행 단위로 층이 쌓이듯이 공간이 분할됨-->
+  <div>Block</div>
+  <div>Block</div>
+  <div>Block</div>
+  <div>Block</div>
+  <div>Block</div>
+
+  <!-- 줄 단위로 쭉 이어 붙어서 분할됨-->
+  <span>Inline</span>
+  <span>Inline</span>
+  <span>Inline</span>
+  <span>Inline</span>
+  <span>Inline</span>
+
+  <!-- 이제껏 배웠던 h1, p, a, b, i, ... 등 모두 Block 속성 또는 Inline 속성에 해당됨 -->
+
+  <!-- exceptions -->
+  <!-- img tag 같은 경우는 InlineBlock 이라는 특이한 속성이긴 함 -->
+
+  <p>
+    실제로 header, nav, aside, section, article, footer 같은 tag들은 div와 완전히 같은 기능을 함
+    <!-- div와 같은 기능        ***** 중요: 하지만 검섹 엔진에서 hint를 얻을 수 있게 만들어줌!!!-->
+  <header>
+    <h2>사이트 이름</h2> <!-- site 이름? -->
+  </header>
+  <nav> <!-- 안에 목록 안에 a tag에 link가 있으면 사이트의 특정 메뉴로 이동?-->
+    <ul>
+      <li> <a href="">링크1</a> </li>
+      <li> <a href="">링크2</a> </li>
+      <li> <a href="">링크3</a> </li>
+    </ul>
+  </nav>
+  <aside> <!-- 안에 목록 안에 link가 있으면 세부 카테고리 내부에서 이동?-->
+    <ul>
+      <li> <a href="">세부링크1</a> </li>
+      <li> <a href="">세부링크2</a> </li>
+      <li> <a href="">세부링크3</a> </li>
+    </ul>
+  </aside>
+  <section></section>
+  <article></article>
+  <footer></footer>
+  </p>
 
 </body>
 
