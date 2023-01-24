@@ -1,0 +1,26 @@
+/* 기본적으로 tag, class, id, tag.id 등 속성을 설정하고, HTML 파일에서 해당 속성을 사용하면 아래의 내용을 적용*/
+
+/* tag selector */
+p {
+    color: magenta;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* ID selector */
+#center {
+    text-align: left;
+    color:cyan;
+}
+
+/* class selector */
+.center {
+    text-align: right;
+    color: yellow;
+}
+
+/* class within tag */
+p.center {
+    text-align: center;
+    color:blueviolet;
+}

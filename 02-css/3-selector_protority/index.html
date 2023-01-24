@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS 적용 우선순위 - 태그</h1>
+    <h1 class="text">CSS 적용 우선순위 - 클래스</h1>
+    <h1 class="text" id="text">CSS 적용 우선순위 - 아이디</h1>
+    <h1 id="text" style="color:gold">CSS 적용 우선순위 - 인라인</h1>
+    <h1>CSS 적용 우선순위 - !important</h1> <!-- CSS 에서 !important라고 되어 있는 것이 가장 우선순위가 놓음-->
+
+    <br><hr><br>
+
+    <h2>CSS 스타일 우선순위</h2>
+
+    <ol>
+        <li>!important</li>
+        <li>inline-style: tag안에서 style 지정</li>
+        <li>id: ID로 설정된 것</li>
+        <li>class: class로 설정된 것</li>
+        <li>tag: 기본 태그</li>
+    </ol>
+    
+    <p>
+        <div> 기본적으로 위에 있을수록 설정된다는 개념이지만, </div>
+        <div> <u>아래에서 위로 가면서 설정이 됨</u> </div>
+        <div> 즉, 원래 tag의 스타일을 적용하고, class, id, inline, ... 순서로 진행하면서 하나씩 overwrite </div>
+
+    </p>
+
+</body>
+</html>

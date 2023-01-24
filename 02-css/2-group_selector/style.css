@@ -1,0 +1,29 @@
+/*
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+p {
+    text-align: center;
+    color: blue
+}
+*/
+
+/* 그룹 선택자: 위 두 선택자는 정확히 동일한 역할을 하기 때문에 아래처럼 comma(,)로 묶어줌 */
+h1, p {
+    text-align: center;
+    color:blue;
+}
+
+/* 하위 선택자: 어떤 태그 안에 있는 태그에 대한 선택자, 그냥 스페이스 바로 설정 */
+p span {
+    text-align: center;
+    color:red;
+}
+
+/* 전체 선택자: 그냥 전역으로 스타일 넣어줌, 일반적으로 사용하지 말자 */
+/* * {
+    font-size: 24px;
+    line-height: 36px;
+} */
