@@ -13,5 +13,103 @@
         Do duis voluptate laboris non quis Lorem velit.
         <span>Cillum ipsum tempor enim ad sunt.</span>
     </p>
+
+    <!-- id vs class -->
+    <!-- id는 하나의 html 파일에서 unique 해야 함. 사실 여러개 중복되도 상관 없는데 javascript에서 문제 생김-->
+    <!-- class는 여러개의 tag에서 중복 사용이 가능함 -->
+
+    <!-- 띄어쓰기 기준으로 class 여러개 지정 가능-->
+    <div class="a b c d"> k k k </div>
+
+    <div>
+        <ul>
+            <li>Hello1</li>
+            <li>Hello2</li>
+            <li>Hello3</li>
+        </ul>
+    </div>
+
+    <div>
+        <ol>
+            <li>Hello1</li>
+            <li>Hello2</li>
+            <li>Hello3</li>
+        </ol>
+    </div>
+    
+    <hr>
+
+    <div title="title_1">
+        <div> 안녕하세요 </div>
+        <div> 제 이름은 </div>
+        <div> ㄷㄱㄷㄱㄷㄱ </div>
+    </div>
+    <div title="title_2">
+        <div> 안녕하세요 </div>
+        <div> 제 이름은 </div>
+        <div> ㄷㄱㄷㄱㄷㄱ </div>
+    </div>
+
+    <hr>
+
+    <input type="password">
+
+    <hr>
+
+    <!-- Zen coding -->
+    vscode에서 입력: ul>li*4>a>img <br>
+    이렇게 하면 ul 밑에 li를 4개만드는데 각 li 에는 a tag가 있그 a 안에 img 가 있다! 자동 생성
+    <ul>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+    </ul>
+
+    <hr>
+
+    실제로 여기서 사용되는 후손, 자손 이런 내용들이 꼭 tag가 아니어도 됨 ㅇㅇ id나 class 도 됨
+
+    <hr>
+
+    근데 이런것들 이외에도 존나게 많음. 아래의 것들은 필요할 때 혹은 복잡한 웹페이지를 만들 때 사용하자. 다 못외움
+    <table border="1">
+        <tr>
+            <td>문자열 속성 선택자</td>
+            <td>속성의 특정 문자열을 매칭해서 선택함</td>
+        </tr>
+        <tr>
+            <td>동위 선택자</td>
+            <td>동위(형제) 관계(같은 tree depth에 있는 tag)에서 선택(첫번째 꺼나 그외에 것들)</td>
+        </tr>
+        <tr>
+            <td>반응 선택자</td>
+            <td>사용자 반응으로 특정 상태를 선택함(마우스 오버, 마우스 클릭)</td>
+        </tr>
+        <tr>
+            <td>상태 선택자</td>
+            <td>입력 양식(form)의 상태를 선택할 떄 사용함(checked, focus, enabled, disabled)</td>
+        </tr>
+        <tr>
+            <td rowspan="2">구조 선택자</td>
+            <td>동위(형제) 관계에서 구조적으로(순서?) 어떤 패턴을 통해서 선택자를 넣음(첫번째, 마지막, 짝수번째, ...)</td>
+        </tr>
+        <tr>
+            <td>또한 순서 뿐만 아니라 tag 형태로도 구분해서 선택자를 넣음 (첫번 째 특정 태그,  몇번쨰 특정 태그, ...)</td>
+        </tr>
+        <tr>
+            <td>문자 선택자</td>
+            <td>어떤 태그의 내용들에서 특정 위치를 글자를 선택함(첫번째 글자만 대문자, 크기 크게 등...) or 앞 뒤에 뭘 넣거나 드래그한 글자를 선택하거나 등...</td>
+        </tr>
+        <tr>
+            <td>링크 선택자</td>
+            <td>a href로 만든 link를 선택하거나 이미 방문했던 link에 대한 선택</td>
+        </tr>
+        <tr>
+            <td>부정 선택자</td>
+            <td>앞서 나왔던 모든 선택자들의 반대 적용을 함</td>
+        </tr>
+    </table>
+
 </body>
 </html>

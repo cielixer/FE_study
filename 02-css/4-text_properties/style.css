@@ -1,0 +1,38 @@
+body {
+    font-size: 15px;
+    line-height: 1.6em; /* em 은 font-size에 따라 상대적으로 변함!!!*/
+}
+
+h2 {
+    font-weight: normal;
+    color: #FFAF0F;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+p.text {
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+}
+
+p.copy {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu1 {
+    list-style: upper-roman;
+
+}
+
+.menu1 > li::before {
+    content: " >_< ";
+}
+
+.menu2 {
+    list-style: square;
+}

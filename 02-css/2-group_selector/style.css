@@ -10,20 +10,59 @@ p {
 }
 */
 
+/* 전체 선택자: 그냥 전역으로 스타일 넣어줌, 일반적으로 사용하지 말자 */
+/* * {
+    font-size: 24px;
+    line-height: 36px;
+} */
+
 /* 그룹 선택자: 위 두 선택자는 정확히 동일한 역할을 하기 때문에 아래처럼 comma(,)로 묶어줌 */
 h1, p {
     text-align: center;
     color:blue;
 }
 
-/* 하위 선택자: 어떤 태그 안에 있는 태그에 대한 선택자, 그냥 스페이스 바로 설정 */
-p span {
+/* 후손 선택자: 어떤 태그 안에 있는 태그에 대한 선택자, 후손의 depth(tree 관점)에 관계 없이 어딘가 하위에 있으면 적용됨 */
+
+p > span {
     text-align: center;
     color:red;
 }
 
-/* 전체 선택자: 그냥 전역으로 스타일 넣어줌, 일반적으로 사용하지 말자 */
-/* * {
+div li { /* div 하위 어딘가에 li 가 있으면 다 적용됨 */
     font-size: 24px;
-    line-height: 36px;
-} */
+}
+
+/* 자손 선택자: 특정 태그 바로 밑에 어떤 태그에 대한 선택자 */
+div > ul {
+    color: lightgreen;
+
+}
+
+/* 속성 선택자: 그냥 속성 이름만 넣으면 그 속성을 가지고 있는 모든 tag에 설정됨*/
+[title] {
+    text-align: right;
+}
+
+/* 속성 선택자: 속서의 특정 값이 설정 된 경우 그 속성의 값을 가진 애들만 적용됨. ""를 생략해도 됨*/
+[title="title_1"] {
+    color: orange;
+}
+
+/* 특정 태그 안에 어떤 속성은 아래와 같이 설정함. ex) input tag 중에 type="password"인 애들*/
+input[type="password"] {
+    background: blue;
+}
+
+.a {
+    color:gold
+}
+
+.b {
+    font-size: 24px;
+}
+
+.c.d { /* c와 d가 class로 설정된 애들만 적용됨 */
+    text-align: center;
+}
+
