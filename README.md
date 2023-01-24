@@ -26,3 +26,4 @@ Frontend development study.
     - [basic_selector](02-css/1-basic_selector/index.html)
     - [group_selector](02-css/2-group_selector/index.html)
     - [selector_priotiry](02-css/3-selector_protority/index.html)
+    - [basic_properties](02-css/4-basic_properties/index.html)

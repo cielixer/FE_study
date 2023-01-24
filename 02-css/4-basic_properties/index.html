@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Text Style Properties</h1>
+
+    <ul>
+        <li>fontsize: 텍스트의 크기를 지정 (px주로 많이 씀)</li>
+        <li>font-weight: 글꼴 두께를 지정 (100~900, bold==700 bolder lighter normal==400</li>
+        <li>line-height: 줄간격 (보통 em 많이 씀, em은 상태값임!!)</li>
+        <li>font-family: 글꼴 지정</li>
+        <li>font-style: normal, italic, oblique</li>
+        <li>color: 색상 지정: 16진수(#FFFFFF), rgb(0, 0, 0), rgba(0, 0, 0, 0.5)</li>
+        <li>text-decoration: 꾸미기: none, underline, overline, line-through</li>
+        <li>text-transform: 텍스트 대소문자 변환: none, capitalize, uppercase, lowercase</li>
+        <li>text-algin: center, left, right, justify</li>
+        <li>text-shadow: 그림자 효과(x 거리, y거치, 퍼짐 거리, 색상 등 설정)</li>
+    </ul>
+
+    <h2>Et qui nisi qui sunt eiusmod aliquip anim officia culpa dolore.</h2>
+
+    <p class="text">
+        Dolore magna ex duis nisi duis Lorem proident sit ex eiusmod consequat aliqua laboris. Dolore commodo ex incididunt dolor enim laborum reprehenderit aute aliquip est dolor enim id. Eiusmod sit laborum eiusmod Lorem non eiusmod ex. Velit excepteur nulla Lorem ullamco. Adipisicing amet in dolor ut officia deserunt irure deserunt esse Lorem.
+    </p>
+
+    <a href="http://naver.com">네이버 바로가기</a>
+    <p class="copy">Copyright All Reserved by CodingWorks 2020</p>
+
+    <hr>
+
+    <h1>List Style Properties</h1>
+
+    <ol class="menu1">
+        <li>Menu-1</li>
+        <li>Menu-2</li>
+        <li>Menu-3</li>
+        <li>Menu-4</li>
+    </ol>
+
+    <ul class="menu2">
+        <li>Menu-1</li>
+        <li>Menu-2</li>
+        <li>Menu-3</li>
+        <li>Menu-4</li>
+    </ul>
+
+    <hr>
+
+    <h1>Visibility Properties</h1>
+
+    <p>실제로 이 밑에 h3로 Hello를 5개 띄웠는데 display: none으로 설정을 해서 안보이게 만들었음. js에서 다시 보이게끔 만들기 위해서 생각보다 많이 쓰는 속성임</p>
+    <h3>Hello</h3>
+    <h3>Hello</h3>
+    <h3>Hello</h3>
+    <h3>Hello</h3>
+    <h3>Hello</h3>
+
+    <p>
+        아래의 1~3번 Text는 일반적인 display:inline(span에서 default)인데, inilne은 기본적으로 row 단위의 값이 1로 고정 되어 있기 때문에 margin, padding을 넣게 되면 좌측, 우측에서만 값이 적용이 되고, display:inline-block으로 설정하게 되면 block 형태로 row 단위의 값이 1 이상으로 설정될 수 있기 때문에 상하좌우에 margin, padding이 적용이 됨. 자세한건 다음 section인 box-model에서 다룸. 자세하게 보려면 chrome의 개발자 도구로 mouse hover 하면 영역별로 크기를 볼 수 있음.
+        <br> + width, height의 경우에도 inline에서는 적용이 되지 않음. inline-block에서는 둘다 설정이 됨
+    </p>
+
+    <span>Text</span>
+    <span>Text</span>
+    <span>Text</span>
+    <span class="inline-block">Text</span>
+    <span class="inline-block">Text</span>
+    <span class="inline-block">Text</span>
+
+    <br>
+
+    <p>Visibility 태그의 경우 보이냐 안보이냐 + 몇개 기능인데 거의 보이거나 안보이거나만 설정을 함. display: none이랑 다를게 없어보이지만, display: none의 경우 아예 없어져 버려서 실제 웹에서 크기가 설정이 되지 않음. 하지만 visibility: hidden으로 설정하면 크기는 설정이 되지만 보이지 않을 뿐임. 즉, display: none과 visibility: hidden은 다른 값이고 쓰이는 용도가 다름</p>
+    <br> 실제로 아래에 Hello 라고 h4로 만들었는데 안보임
+
+    <h4> Hello </h4>
+
+    <h5> Hello </h5>
+
+    <hr>
+
+    <h1>Opacity Properties</h1>
+
+    <p>opacity propertiy를 설정해서 투명도를 설정했음. div에 background-color를 설정하고 opacity를 낮췄음. 근데 background-color에서 rgba 값으로 투명도를 주는거랑 뭐가 다르냐? => background-color rgba로 설정하면 진짜 background-color만 alpha가 설정이 되고, div에 opacity로 설정하게 되면 div 내부에 있는 모든 내용들에 opacity가 적용이 됨!</p>
+
+    <div class="black">
+        <p>
+            Hello!!
+        </p>
+    </div>
+
+</body>
+</html>
